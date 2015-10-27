@@ -6,7 +6,7 @@ var Planets = db.get('planets');
 router.get('/', function(req, res, next) {
   Planets.find({}, function(err, docs) {
     res.json(docs);
-  }
+  })
 });
 
 router.get('/new', function(req, res, next) {
